@@ -1,0 +1,24 @@
+﻿<Window x:Class="HelloWPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HelloWPF"
+        mc:Ignorable="d"
+        Title="ContaCerta" Height="350" Width="525" WindowStartupLocation="CenterScreen">
+    <Grid Margin="10,0,2,-2">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="54*"/>
+            <RowDefinition Height="53*"/>
+        </Grid.RowDefinitions>
+        <Button x:Name="btnContas" Content="Contas" HorizontalAlignment="Left" Margin="80,53,0,24" Width="145" FontSize="18.667" Background="#FFDDDDDD" ToolTip="Gerencia Contas"/>
+        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Height="0" Margin="199,73,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="10"/>
+        <Button x:Name="btnPessoas" Content="Pessoas" Margin="0,53,62,24" FontSize="18.667" HorizontalAlignment="Right" Width="145" Background="#FFDDDDDD" ToolTip="Gerencia Pessoas"/>
+        <Button x:Name="btnAprovarContas" Content="Aprovar Contas" HorizontalAlignment="Left" Margin="80,10,0,65" Width="145" Grid.Row="1" FontSize="18.667" Background="#FFDDDDDD" ToolTip="Aprova Contas"/>
+        <Button x:Name="btnRelatorios" Content="Relatórios" Margin="0,10,62,65" Grid.Row="1" FontSize="18.667" HorizontalAlignment="Right" Width="145" Background="#FFDDDDDD" ToolTip="Relatório de Despesas por mês"/>
+        <StatusBar x:Name="sbStatus" Height="35" Grid.Row="1" VerticalAlignment="Bottom" FontSize="9.333" Margin="-14,0,0,0">
+            <Label Name="lblMensagem" Content="{Binding ElementName=btnContas, Path=Content}" FontSize="10.667"/>
+        </StatusBar>
+
+    </Grid>
+</Window>
