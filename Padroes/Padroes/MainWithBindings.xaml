@@ -1,0 +1,34 @@
+﻿<Window x:Class="Padroes.MainWithBindings"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Padroes"
+        xmlns:padroes="clr-namespace:Padroes"
+        mc:Ignorable="d"
+        Title="MainWithBindings" Height="404.556" Width="419.12">
+    <Window.Resources>
+        <local:CustomerViewModel x:Key="customerObject" 
+                                   txtCustomerName="Thiago Vinculo"
+                                   txtAmount="1000" Tax="200"/>
+    </Window.Resources>
+    <Grid>
+        <Label x:Name="label" Content="Customer Name" HorizontalAlignment="Left" Margin="58,53,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label_Copy" Content="Sales Amount" HorizontalAlignment="Left" Margin="58,103,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label_Copy1" Content="Buying Habits" HorizontalAlignment="Left" Margin="58,148,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label_Copy2" Content="Married" HorizontalAlignment="Left" Margin="58,193,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblCustomerName" 
+               Content="{Binding txtCustomerName, Source={StaticResource customerObject}}" HorizontalAlignment="Left" Margin="192,53,0,0" VerticalAlignment="Top" Width="117"/>
+        <Label x:Name="lblSalesAmount" Content="{Binding txtAmount, Source={StaticResource customerObject}}" HorizontalAlignment="Left" Margin="192,103,0,0" VerticalAlignment="Top" Width="117" Height="26"/>
+        <Label x:Name="lblHabits" Background="{Binding lblAmountColor, Mode=OneWay, Source={StaticResource customerObject}}" HorizontalAlignment="Left" Margin="192,148,0,0" VerticalAlignment="Top" Width="117" Height="26"/>
+        <CheckBox x:Name="chkMarried" Content="{Binding IsMarried, Source={StaticResource customerObject}}" HorizontalAlignment="Left" Margin="192,204,0,0" VerticalAlignment="Top"/> 
+        <Label x:Name="label_Copy3" Content="Tax" HorizontalAlignment="Left" Margin="58,242,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.529,2.192"/>
+        <Label x:Name="lblTax" Content="{Binding Tax, Source={StaticResource customerObject}}" HorizontalAlignment="Left" Margin="192,242,0,0" VerticalAlignment="Top" Width="117" Height="26"/>
+        
+        <Button x:Name="btnCalculateTax" Content="Calculate Tax" HorizontalAlignment="Left" Height="35" 
+                Margin="163,299,0,0" VerticalAlignment="Top" Width="103"
+                Command="{Binding btnClick, Mode=OneWay, Source={StaticResource customerObject}}"/>
+        
+        
+    </Grid>
+</Window>
