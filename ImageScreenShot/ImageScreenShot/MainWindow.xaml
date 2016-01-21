@@ -11,7 +11,7 @@
             <RowDefinition/>
             <RowDefinition Height="0*"/>
         </Grid.RowDefinitions>
-        <Image x:Name="imgSource" HorizontalAlignment="Left" Height="167" Margin="10,92,0,0" VerticalAlignment="Top" Width="302" Source="Cam1.jpg" Stretch="None"/>
+        <Image x:Name="imgSource" HorizontalAlignment="Left" Height="167"  Margin="10,92,0,0" VerticalAlignment="Top" Width="302" Source="Cam1.jpg" Stretch="None"/>
         <Image x:Name="imgTarget" HorizontalAlignment="Left" Height="167" Margin="330,92,0,0" VerticalAlignment="Top" Width="302"/>
         <Image x:Name="imgFinal" HorizontalAlignment="Left" Height="167" Margin="330,332,0,0" VerticalAlignment="Top" Width="302" Stretch="None"/>
         <Button x:Name="button" Content="Take Screenshot" HorizontalAlignment="Left" Margin="209,43,0,0" VerticalAlignment="Top" Width="103" Click="button_Click" Height="40"/>

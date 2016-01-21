@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace HelloWPF.Properties
+namespace VlcFormTest.Properties
 {
 
 

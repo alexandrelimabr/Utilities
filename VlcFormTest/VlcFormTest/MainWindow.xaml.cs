@@ -12,22 +12,31 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using Vlc.DotNet.Core.Interops;
 
-namespace HelloWPF
+namespace VlcFormTest
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
     public partial class MainWindow : Window
     {
+        Vlc.DotNet.Forms.VlcControl player;
         public MainWindow()
         {
             InitializeComponent();
+
+            player = new Vlc.DotNet.Forms.VlcControl();
+
+            winformsHost.Child = player;
+            player.Visible = true;
         }
 
-        private void btnHello_Click(object sender, RoutedEventArgs e)
+        private void btnPlay_Click(object sender, RoutedEventArgs e)
         {
-            //textBox.Text = "Olá WPF, muito tempo se passou velho amigo! Mas tamos aqui de novo!";
+            Vlc.DotNet.Core.VlcMediaPlayer player2 = new Vlc.DotNet.Core.VlcMediaPlayer();
+
+            player.Play(new Uri(txtURI.Text));
         }
     }
 }

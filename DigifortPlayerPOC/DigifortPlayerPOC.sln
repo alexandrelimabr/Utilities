@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.23107.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloWPF", "HelloWPF\HelloWPF.csproj", "{B62C7E66-E8ED-4E64-8BC8-CF5D680FC7EE}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DigifortPlayerPOC", "DigifortPlayerPOC.csproj", "{CE98CAA8-3C11-4665-9C2A-9B77C08BA038}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +11,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{B62C7E66-E8ED-4E64-8BC8-CF5D680FC7EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B62C7E66-E8ED-4E64-8BC8-CF5D680FC7EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{B62C7E66-E8ED-4E64-8BC8-CF5D680FC7EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{B62C7E66-E8ED-4E64-8BC8-CF5D680FC7EE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CE98CAA8-3C11-4665-9C2A-9B77C08BA038}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CE98CAA8-3C11-4665-9C2A-9B77C08BA038}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CE98CAA8-3C11-4665-9C2A-9B77C08BA038}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CE98CAA8-3C11-4665-9C2A-9B77C08BA038}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -54,8 +54,14 @@ namespace WpfApplication1
             x = (int)p.X;
             y = (int)p.Y;
 
-            width = (int)imgSource.Width - 1;
-            height = (int)imgSource.Height;
+            System.Windows.Point pSize = imgSource.PointToScreen(new System.Windows.Point(imgSource.Width, imgSource.Height));
+
+            width = (int)pSize.X;
+            height = (int)pSize.Y;
+
+            int wpfWidth = (int) imgSource.Width;
+            int wpfHeight = (int)imgSource.Height;
+
 
             //Faz um crop da imagem criada acima usando as dimensões do controle original e salva esta nova imagem
             Rectangle cloneRect = new Rectangle(x, y, width, height);
@@ -65,6 +71,12 @@ namespace WpfApplication1
             clonedBitMap.Dispose();
             imgFinal.Source = new BitmapImage(new Uri(fileResized));
 
+        }
+
+        static System.Windows.Point RealPixelsToWpf(Window w, System.Windows.Point p)
+        {
+            var t = PresentationSource.FromVisual(w).CompositionTarget.TransformFromDevice;
+            return t.Transform(p);
         }
 
     }
