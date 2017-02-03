@@ -1,0 +1,7 @@
+C:\Temp\Prodesp\ThrottleSample\bin\Release\ThrottleSample.exe
+C:\Temp\Prodesp\ThrottleSample\bin\Release\ThrottleSample.pdb
+C:\Temp\Prodesp\ThrottleSample\obj\Release\ThrottleSample.csprojResolveAssemblyReference.cache
+C:\Temp\Prodesp\ThrottleSample\obj\Release\ThrottleSample.exe
+C:\Temp\Prodesp\ThrottleSample\obj\Release\ThrottleSample.pdb
+C:\Users\v-limal\Microsoft\OneDrive - Microsoft\Detecta\SergioMSMQTools\ThrottleSample\obj\Release\ThrottleSample.exe
+C:\Users\v-limal\Microsoft\OneDrive - Microsoft\Detecta\SergioMSMQTools\ThrottleSample\obj\Release\ThrottleSample.pdb
